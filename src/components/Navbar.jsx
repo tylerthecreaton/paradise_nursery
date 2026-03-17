@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { selectCartItemCount } from '../features/cart/CartSlice';
+import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectCartItemCount } from "../CartSlice";
 
 function Navbar() {
   const count = useSelector(selectCartItemCount);
@@ -10,13 +10,19 @@ function Navbar() {
     <header className="navbar">
       <div className="brand">Paradise Nursery</div>
       <nav className="nav-links">
-        <Link className={location.pathname === '/' ? 'active' : ''} to="/">
+        <Link className={location.pathname === "/" ? "active" : ""} to="/">
           Home
         </Link>
-        <Link className={location.pathname === '/products' ? 'active' : ''} to="/products">
+        <Link
+          className={location.pathname === "/products" ? "active" : ""}
+          to="/products"
+        >
           Plants
         </Link>
-        <Link className={location.pathname === '/cart' ? 'active' : ''} to="/cart">
+        <Link
+          className={location.pathname === "/cart" ? "active" : ""}
+          to="/cart"
+        >
           Cart
         </Link>
       </nav>

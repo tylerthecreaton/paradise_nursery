@@ -1,7 +1,7 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import AboutUs from './components/AboutUs';
-import ProductList from './components/ProductList';
-import CartItem from './components/CartItem';
+import { Navigate, Route, Routes } from "react-router-dom";
+import AboutUs from "./AboutUs";
+import ProductList from "./ProductList";
+import CartItem from "./CartItem";
 
 function App() {
   return (
